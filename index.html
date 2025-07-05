@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ludo Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <div class="login" id="loginSection">
+    <h2>Ludo Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <div class="buttons">
+      <button onclick="signup()">Signup</button>
+      <button onclick="login()">Login</button>
+    </div>
+    <div class="status" id="loginStatus"></div>
+  </div>
+
+  <div class="game hidden" id="gameSection">
+    <h2>Ludo Game</h2>
+    <div class="board" id="board"></div>
+    <div class="status" id="status"></div>
+    <button id="rollButton" onclick="rollDice()">Roll Dice</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
